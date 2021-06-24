@@ -9,6 +9,9 @@ const fetchAndGenerateTodoList = () => {
                 <p class="deadline">${element.published}</p>
                 <p class="todo">${element.todo}</p>
                 <p class="deadline">${element.deadline == null ? "NS" : element.deadline}</p>
+                <div class="checkbox ${element.completed ? "checked" : "not-checked"}">
+                    <p class="checksign">${element.completed ? "✓" : "x"}</p>
+                </div>
             </li>
         `;
         } 
