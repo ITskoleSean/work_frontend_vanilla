@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="./Styles/grid.css">
+    <link rel="stylesheet" href="./Styles/card.css">
+
+    <script src="./Generators/TodoGenerator.js" type="module"></script>
+
+    <title>Work</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="grid">
+
+            <!-- Grid spot for the container -->
+            <div class="todocontainer">
+
+                <!-- The Card -->
+                <div class="card">
+
+                    <!-- Container for the Header of card -->
+                    <div class="card-header">
+                        <p class="title">Todos</p>
+                    </div>
+
+                    <!-- Container for the Content of the card -->
+                    <div class="card-content">
+                        <!-- List -->
+                        <ul class="card-list" id="todoTarget">
+                            <!-- Each li is one Todo -->
+                            <li class="card-list-descriptor">
+                                <div class="card-list-item-divider">
+                                    <p class="card-list-item-text">
+                                        Published
+                                    </p>
+                                </div>
+                                <div class="card-list-item-divider">
+                                    <p class="card-list-item-text">
+                                        Todo
+                                    </p>
+                                </div>
+                                <div class="card-list-item-divider">
+                                    <p class="card-list-item-text">
+                                        Deadline
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- <li class="card-list-item">
+                                <div class="card-list-item-divider">
+                                    <p class="deadline">2020-01-99</p>
+                                </div>
+                                <div class="card-list-item-divider">
+                                    <p class="todo">Walk dog</p>
+                                </div>
+                                <div class="card-list-item-divider">
+                                    <p class="deadline">2020-01-100</p>
+                                </div>
+                            </li> -->
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
