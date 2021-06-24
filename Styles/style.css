@@ -15,12 +15,13 @@
     --fifth: #CFD8DC;
     --shadow: #bebebe;
     --text: #F6F6ff;
+    --check: #72d874;
+    --no-check: #FF6969;
 
     --font: 'Noto Sans JP', sans-serif;
 
     --standard-radius: 20px;
     --standard-padding: 1rem;
-    
 }
 
 main {
@@ -37,4 +38,31 @@ main {
 .loadingText {
     font-weight: bolder;
     font-size: 1.5rem;
+}
+
+.checksign {
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.checkbox {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    color: var(--text);
+
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.checked {
+    background-color: var(--check);
+}
+
+.not-checked {
+    background-color: var(--no-check);
 }
